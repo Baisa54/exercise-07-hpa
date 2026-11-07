@@ -9,3 +9,4 @@ data:
   POSTGRES_USER: noderegistry
   POSTGRES_PASSWORD: noderegistry
   POSTGRES_DB: noderegistry
+
