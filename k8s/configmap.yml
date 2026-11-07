@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-registry-config
+  labels:
+    app: node-registry
+data:
+  DATABASE_URL: postgresql+psycopg2://noderegistry:noderegistry@db:5432/noderegistry
+  POSTGRES_USER: noderegistry
+  POSTGRES_PASSWORD: noderegistry
+  POSTGRES_DB: noderegistry

@@ -1,1 +1,15 @@
-# TODO: Service exposing port 8080
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-registry
+  labels:
+    app: node-registry
+spec:
+  type: ClusterIP
+  selector:
+    app: node-registry
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+      protocol: TCP
